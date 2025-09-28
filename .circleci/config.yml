@@ -12,7 +12,7 @@ executors:
           username: $DOCKER_HUB_USER
           password: $DOCKER_HUB_PASSWORD
 jobs:
-  web3-defi-game-project-:
+  web3-defi-game-project:
 
     executor: my-custom-executor
     steps:
@@ -23,4 +23,4 @@ jobs:
 workflows:
   my-custom-workflow:
     jobs:
-      - web3-defi-game-project-
+      - web3-defi-game-project
