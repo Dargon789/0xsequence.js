@@ -2,11 +2,12 @@
 # package ecosystems to update and where the package manifests are located.
 # Please see the documentation for all configuration options:
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
+# corepack enable [--install-directory #0]  Install the package manager configured in the local project
+# corepack install <-g,--global> [--cache-only] Install package managers on the system
+# corepack pack [--json] [-o,--output #0] Store package managers in a tarball
 version: 2
 updates:
   - package-ecosystem: "" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
-      
+      interval: "weekly" 
