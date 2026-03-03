@@ -81,7 +81,7 @@ jobs:
             git add .
             git commit -m "Build: publish $PACKAGE dist"
 
-            git remote add upstream  https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+            git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
             git push -f origin HEAD:$BRANCH
 
             cd -
